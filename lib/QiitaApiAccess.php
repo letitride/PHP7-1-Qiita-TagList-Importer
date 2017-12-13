@@ -34,7 +34,7 @@ class QiitaApiAccess {
         $this->_sort = $sort;
     }
 
-    private function makeUrl(){
+    public function makeUrl(){
 
         $url = sprintf( self::QIITA_API_DOMAIN, $this->_method );
         $params = array();
